@@ -13,7 +13,7 @@ repositories {
 // tag::jar[]
 jar {
 	  manifest {
-		attributes ‘Main-Class’ : ‘hello.HelloWorld’
+		attributes 'Main-Class' : 'hello.HelloWorld'
 	}
     baseName = 'gs-gradle'
     version =  '0.1.0'
