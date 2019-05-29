@@ -12,12 +12,11 @@ repositories {
 
 // tag::jar[]
 jar {
-  manifest {
-    attributes(
-      'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
-      'Main-Class': 'hello.HelloWorld'
-    )
-  }
+	  manifest {
+		attributes ‘Main-Class’ : ‘hello.HelloWorld’
+	}
+    baseName = 'gs-gradle'
+    version =  '0.1.0'
 }
 // end::jar[]
 
